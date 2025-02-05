@@ -1,4 +1,12 @@
 {
     "theme": "Culture générale",
-    "nombre_de_questions": 10
+    "nombre_de_questions": 10,
+    "questions" : {
+        "Culture générale" : {
+            "Quel est la capitale du Pérou ? ": "Lima",
+            "Comment s'appelle le petit du lion ? ": "lionceau",
+            "Comment dit on plage en espagnol ? ": "playa",
+            "Quel est la longueur du canal de Nantes à Brest ? ": 260
+        }
+    }
 }
