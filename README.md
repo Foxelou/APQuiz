@@ -1,0 +1,2 @@
+foxelou = elouan
+kurbtica = maël
