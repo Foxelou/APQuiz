@@ -1,4 +1,5 @@
 import json
+import random
 
 theme = "Culture Générale"
 nombre_de_questions = 10
@@ -29,13 +30,38 @@ def main():
 
 def quiz(qs):
     points = 0
-    for qu,an in qs.items():
-        if str(input(qu)).lower() == str(an).lower():
-            points += 1
-            print("Juste.")
-        else:
-            print("Oups, la bonne réponse est \"{}\".".format(an))
+    dico=qs.items()
+    liste=[]
+    peu_tombe=[]
+    for elt in dico:
+        liste.append(elt)
+    for i in range(len(liste)):
+        peu_tombe.append(i)
+  
+    for _ in range(nombre_de_questions):
+        
+        aleatoire=random.randint(0,len(liste))
+        print(aleatoire)
+        if len(peu_tombe)!=0:
+            while aleatoire not in peu_tombe :
+                aleatoire=random.randint(0,len(liste))
+                print(aleatoire)
+            peu_tombe.remove(aleatoire)
+            print(peu_tombe)
+            reponse=input(liste[aleatoire][0])
+            if reponse == liste[aleatoire][1]:
+                points += 1
+                print("Juste.")
+            else:
+                print("Oups, la bonne réponse est : ",liste[aleatoire][1])
     return points
+    # for qu,an in qs.items():
+    #     if str(input(qu)).lower() == str(an).lower():
+    #         points += 1
+    #         print("Juste.")
+    #     else:
+    #         print("Oups, la bonne réponse est \"{}\".".format(an))
+    # return points
     
 if __name__ == "__main__":
     main()
