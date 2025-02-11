@@ -1,9 +1,11 @@
 import json
 import random
 
+nom = ""
 theme = "Culture Générale"
-nombre_de_questions = 10
+nombre_de_questions = 2
 questions = None
+reponsesUtlisateur = {}
 
 def initialiser_quiz():
     global theme
@@ -20,16 +22,17 @@ def initialiser_quiz():
 
 # Simple quiz en utilisant les dictionnaires
 def main():
+    global nom
     print ("*** Début du Quiz ***\n")
     initialiser_quiz()
     nom = input (" Entrez votre nom: ").title()
     print ()
     print(f"Thème du quiz : {theme}")
     print(f"Nombre de questions : {nombre_de_questions}\n")
-    print("\nBien joué {0}, vous avez répondu correctement à {1} sur {2} questions.".format(nom, quiz(questions), len(questions)))
+    quiz(questions)
+    correction()
 
 def quiz(qs):
-    points = 0
     dico=qs.items()
     liste=[]
     peu_tombe=[]
@@ -41,27 +44,30 @@ def quiz(qs):
     for _ in range(nombre_de_questions):
         
         aleatoire=random.randint(0,len(liste))
-        print(aleatoire)
         if len(peu_tombe)!=0:
             while aleatoire not in peu_tombe :
                 aleatoire=random.randint(0,len(liste))
-                print(aleatoire)
             peu_tombe.remove(aleatoire)
-            print(peu_tombe)
             reponse=input(liste[aleatoire][0])
-            if reponse == liste[aleatoire][1]:
-                points += 1
-                print("Juste.")
+            reponsesUtlisateur[liste[aleatoire][0]] = reponse
+
+
+def correction():
+    points = 0
+
+    for question, answers in questions.items():
+        if question in reponsesUtlisateur:
+            if str(reponsesUtlisateur[question]).lower() != str(answers).lower():
+                print("- Correction de la question :")
+                print("   " + question)
+                print("   Votre choix : " + str(reponsesUtlisateur[question]))
+                print("   Correction  : " + str(answers))
             else:
-                print("Oups, la bonne réponse est : ",liste[aleatoire][1])
-    return points
-    # for qu,an in qs.items():
-    #     if str(input(qu)).lower() == str(an).lower():
-    #         points += 1
-    #         print("Juste.")
-    #     else:
-    #         print("Oups, la bonne réponse est \"{}\".".format(an))
-    # return points
+                points += 1
+    
+    print("\nBien joué {0}, vous avez répondu correctement à {1} sur {2} questions.".format(nom, points, nombre_de_questions))
+
+
     
 if __name__ == "__main__":
     main()

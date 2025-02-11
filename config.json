@@ -1,6 +1,6 @@
 {
     "theme": "Culture générale",
-    "nombre_de_questions": 10,
+    "nombre_de_questions": 2,
     "questions" : {
         "Culture générale" : {
             "Quel est la capitale du Pérou ? ": "Lima",
