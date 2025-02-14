@@ -36,9 +36,9 @@ def quiz(qs):
     dico=qs.items()
     liste=[]
     peu_tombe=[]
-    for elt in dico:
+    for elt in dico: # mettre tous les elements de dico dans liste
         liste.append(elt)
-    for i in range(len(liste)):
+    for i in range(len(liste)): # mettre les ID des questions dans peu_tombe
         peu_tombe.append(i)
   
     for _ in range(nombre_de_questions):
@@ -48,7 +48,10 @@ def quiz(qs):
             while aleatoire not in peu_tombe :
                 aleatoire=random.randint(0,len(liste))
             peu_tombe.remove(aleatoire)
-            reponse=input(liste[aleatoire][0])
+            print(liste[aleatoire][0])
+            for option in range(len(liste[aleatoire][1]["options"])):
+                print("Option " + str(option + 1) + ") " + str(liste[aleatoire][1]["options"][option]))
+            reponse=input(" > ")
             reponsesUtlisateur[liste[aleatoire][0]] = reponse
 
 
@@ -57,11 +60,11 @@ def correction():
 
     for question, answers in questions.items():
         if question in reponsesUtlisateur:
-            if str(reponsesUtlisateur[question]).lower() != str(answers).lower():
+            if str(reponsesUtlisateur[question]).lower() != str(answers["reponse"]).lower():
                 print("- Correction de la question :")
                 print("   " + question)
                 print("   Votre choix : " + str(reponsesUtlisateur[question]))
-                print("   Correction  : " + str(answers))
+                print("   Correction  : " + str(answers["reponse"]))
             else:
                 points += 1
     
