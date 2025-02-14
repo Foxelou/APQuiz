@@ -69,6 +69,9 @@ def correction():
                 points += 1
     
     print("\nBien joué {0}, vous avez répondu correctement à {1} sur {2} questions.".format(nom, points, nombre_de_questions))
+    relance=input("une autre partie ? y/n")
+    if relance=="y":
+        main()
 
 
     
