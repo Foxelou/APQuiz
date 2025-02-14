@@ -4,12 +4,14 @@ import random
 nom = ""
 theme = "Culture Générale"
 nombre_de_questions = 2
+nombre_option_reponse = 2
 questions = None
 reponsesUtlisateur = {}
 
 def initialiser_quiz():
     global theme
     global nombre_de_questions
+    global nombre_option_reponse
     global questions
     
     with open('config.json', 'r', encoding='utf-8') as f:
@@ -17,6 +19,7 @@ def initialiser_quiz():
 
     theme = config['theme']
     nombre_de_questions = config['nombre_de_questions']
+    nombre_option_reponse = config['nombre_options_reponse']
     questions = config["questions"][theme]
 
 
@@ -49,13 +52,22 @@ def quiz(qs):
                 aleatoire=random.randint(0,len(liste))
             peu_tombe.remove(aleatoire)
             print(liste[aleatoire][0])
-            for option in range(len(liste[aleatoire][1]["options"])):
-                print("Option " + str(option + 1) + ") " + str(liste[aleatoire][1]["options"][option]))
+
+            options = []
+            while liste[aleatoire][1]["reponse"] not in options:
+                options = random.sample(list(liste[aleatoire][1]["options"]), nombre_option_reponse)
+
+            numero_option = 0
+            for option in options:
+                print("Option " + str(numero_option + 1) + ") " + str(option))
+                numero_option += 1
             reponse=input(" > ")
             reponsesUtlisateur[liste[aleatoire][0]] = reponse
 
 
 def correction():
+    global questions
+    global reponsesUtlisateur
     points = 0
 
     for question, answers in questions.items():
@@ -69,8 +81,10 @@ def correction():
                 points += 1
     
     print("\nBien joué {0}, vous avez répondu correctement à {1} sur {2} questions.".format(nom, points, nombre_de_questions))
-    relance=input("une autre partie ? y/n")
+    relance=input("une autre partie ? y/n \n > ")
     if relance=="y":
+        questions = None
+        reponsesUtlisateur = {}
         main()
 
 

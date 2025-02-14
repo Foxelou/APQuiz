@@ -1,6 +1,7 @@
 {
     "theme": "Culture générale",
-    "nombre_de_questions": 2,
+    "nombre_de_questions": 3,
+    "nombre_options_reponse": 3,
     "questions" : {
         "Culture générale" : {
             "Quel est la capitale du Pérou ?": {
