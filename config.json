@@ -36,6 +36,97 @@
                 "options": ["Pacifique", "Atlantique", "Indien", "Arctique"],
                 "reponse": "Pacifique"
             }
+        },
+        "Histoire": {
+            "Qui était Napoléon Bonaparte ?": {
+                "options": ["Empereur des Français", "Roi d'Angleterre", "Pape", "Philosophe"],
+                "reponse": "Empereur des Français"
+            },
+            "En quelle année a eu lieu la Révolution Française ?": {
+                "options": ["1789", "1799", "1776", "1804"],
+                "reponse": "1789"
+            },
+            "Où a eu lieu la bataille de Waterloo ?": {
+                "options": ["Belgique", "France", "Angleterre", "Espagne"],
+                "reponse": "Belgique"
+            },
+            "Qui a découvert l'Amérique ?": {
+                "options": ["Christophe Colomb", "Marco Polo", "Vasco de Gama", "Magellan"],
+                "reponse": "Christophe Colomb"
+            },
+            "Quelles sont les dates de la Seconde Guerre mondiale ?": {
+                "options": ["1939-1945", "1914-1918", "1800-1815", "1945-1950"],
+                "reponse": "1939-1945"
+            },
+            "Qui était Cléopâtre ?": {
+                "options": ["Reine d'Égypte", "Reine de France", "Impératrice romaine", "Duchesse d'Angleterre"],
+                "reponse": "Reine d'Égypte"
+            }
+        },
+        "Science": {
+            "Qui a formulé la théorie de la relativité ?": {
+                "options": ["Albert Einstein", "Isaac Newton", "Galilée", "Marie Curie"],
+                "reponse": "Albert Einstein"
+            },
+            "Quel est l'élément chimique dont le symbole est O ?": {
+                "options": ["Oxygène", "Or", "Ozone", "Osmium"],
+                "reponse": "Oxygène"
+            },
+            "Quel est l'animal terrestre le plus rapide ?": {
+                "options": ["Guépard", "Léopard", "Antilope", "Lion"],
+                "reponse": "Guépard"
+            },
+            "Quel est le plus grand animal terrestre ?": {
+                "options": ["Éléphant d'Afrique", "Girafe", "Baleine bleue", "Dinosaure"],
+                "reponse": "Éléphant d'Afrique"
+            },
+            "Qu'est-ce qu'un atome ?": {
+                "options": ["La plus petite unité de la matière", "Un type de molécule", "Une particule subatomique", "Une particule de lumière"],
+                "reponse": "La plus petite unité de la matière"
+            },
+            "Quelle est la planète la plus proche du Soleil ?": {
+                "options": ["Mercure", "Vénus", "Terre", "Mars"],
+                "reponse": "Mercure"
+            },
+            "Les plantes produisent-elles de l'oxygène ?": {
+                "options": ["Oui", "Non", "Parfois", "Cela dépend de la plante"],
+                "reponse": "Oui"
+            }
+        },
+        "Informatique": {
+            "Qui a inventé le World Wide Web ?": {
+                "options": ["Tim Berners-Lee", "Bill Gates", "Steve Jobs", "Mark Zuckerberg"],
+                "reponse": "Tim Berners-Lee"
+            },
+            "Qu'est-ce qu'un 'bug' en informatique ?": {
+                "options": ["Un défaut dans le programme", "Une nouvelle fonctionnalité", "Un type de virus", "Un format de fichier"],
+                "reponse": "Un défaut dans le programme"
+            },
+            "Quel est le langage de programmation utilisé pour le développement Android ?": {
+                "options": ["Java", "C++", "Python", "PHP"],
+                "reponse": "Java"
+            },
+            "Quelle est la différence entre le Cloud Computing et un serveur local ?": {
+                "options": ["Le Cloud est accessible via Internet", "Le Cloud est plus rapide", "Les serveurs locaux sont gratuits", "Le Cloud est moins sécurisé"],
+                "reponse": "Le Cloud est accessible via Internet"
+            },
+            "Qu'est-ce qu'un algorithme ?": {
+                "options": ["Un ensemble d'instructions", "Un langage de programmation", "Un type de base de données", "Une technologie web"],
+                "reponse": "Un ensemble d'instructions"
+            },
+            "Quel est le système d'exploitation le plus utilisé au monde ?": {
+                "options": ["Windows", "Linux", "MacOS", "Android"],
+                "reponse": "Windows"
+            },
+            "Qu'est-ce que le 'phishing' ?": {
+                "options": ["Une tentative de fraude en ligne", "Un type de virus", "Un type de réseau social", "Un moteur de recherche"],
+                "reponse": "Une tentative de fraude en ligne"
+            },
+            "Quel est le rôle d'un pare-feu informatique ?": {
+                "options": ["Protéger contre les attaques externes", "Accélérer la connexion Internet", "Gérer les emails", "Optimiser le stockage de données"],
+                "reponse": "Protéger contre les attaques externes"
+            }
         }
+        
     }
 }
