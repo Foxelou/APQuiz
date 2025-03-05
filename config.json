@@ -35,6 +35,22 @@
             "Quel est le plus grand océan du monde ?": {
                 "options": ["Pacifique", "Atlantique", "Indien", "Arctique"],
                 "reponse": "Pacifique"
+            },
+            "Quels pays sont en Amérique du Sud ?": {
+                "options": ["Brésil", "Argentine", "Canada", "Chili"],
+                "reponse": ["Brésil", "Argentine", "Chili"]
+            },
+            "Quelles langues sont des langues romanes ?": {
+                "options": ["Français", "Anglais", "Espagnol", "Chinois"],
+                "reponse": ["Français", "Espagnol"]
+            },
+            "Quels sont les continents sur Terre ?": {
+                "options": ["Afrique", "Asie", "Amérique", "Europe", "Océanie", "Antarctique", "Atlantique"],
+                "reponse": ["Afrique", "Asie", "Amérique", "Europe", "Océanie", "Antarctique"]
+            },
+            "Quels monuments sont à Paris ?": {
+                "options": ["Tour Eiffel", "Arc de Triomphe", "Colisée", "Pyramides de Gizeh"],
+                "reponse": ["Tour Eiffel", "Arc de Triomphe"]
             }
         },
         "Histoire": {
@@ -61,6 +77,22 @@
             "Qui était Cléopâtre ?": {
                 "options": ["Reine d'Égypte", "Reine de France", "Impératrice romaine", "Duchesse d'Angleterre"],
                 "reponse": "Reine d'Égypte"
+            },
+            "Quels sont les événements marquants du XVIIIe siècle en France ?": {
+                "options": ["Révolution française", "Guerre de Cent Ans", "Louis XIV devient roi", "Déclaration des droits de l'homme"],
+                "reponse": ["Révolution française", "Déclaration des droits de l'homme"]
+            },
+            "Quelles civilisations ont existé en Mésoamérique ?": {
+                "options": ["Aztèques", "Mayas", "Inuits", "Olmèques"],
+                "reponse": ["Aztèques", "Mayas", "Olmèques"]
+            },
+            "Quels rois ont régné en France ?": {
+                "options": ["Louis XIV", "François Ier", "Henri VIII", "Charlemagne"],
+                "reponse": ["Louis XIV", "François Ier", "Charlemagne"]
+            },
+            "Quelles guerres ont marqué le XXe siècle ?": {
+                "options": ["Première Guerre mondiale", "Guerre froide", "Seconde Guerre mondiale", "Guerre de Cent Ans"],
+                "reponse": ["Première Guerre mondiale", "Seconde Guerre mondiale", "Guerre froide"]
             }
         },
         "Science": {
@@ -91,6 +123,22 @@
             "Les plantes produisent-elles de l'oxygène ?": {
                 "options": ["Oui", "Non", "Parfois", "Cela dépend de la plante"],
                 "reponse": "Oui"
+            },
+            "Quels sont les états de la matière ?": {
+                "options": ["Solide", "Liquide", "Gazeux", "Plasma"],
+                "reponse": ["Solide", "Liquide", "Gazeux", "Plasma"]
+            },
+            "Quels animaux sont des mammifères ?": {
+                "options": ["Dauphin", "Aigle", "Éléphant", "Tortue"],
+                "reponse": ["Dauphin", "Éléphant"]
+            },
+            "Quels sont les organes du système digestif ?": {
+                "options": ["Estomac", "Foie", "Cerveau", "Intestin grêle"],
+                "reponse": ["Estomac", "Foie", "Intestin grêle"]
+            },
+            "Quels sont les types d'énergie renouvelable ?": {
+                "options": ["Énergie solaire", "Énergie éolienne", "Énergie fossile", "Énergie hydraulique"],
+                "reponse": ["Énergie solaire", "Énergie éolienne", "Énergie hydraulique"]
             }
         },
         "Informatique": {
@@ -125,8 +173,19 @@
             "Quel est le rôle d'un pare-feu informatique ?": {
                 "options": ["Protéger contre les attaques externes", "Accélérer la connexion Internet", "Gérer les emails", "Optimiser le stockage de données"],
                 "reponse": "Protéger contre les attaques externes"
+            },
+            "Quels sont des exemples de langages de programmation ?": {
+                "options": ["Python", "HTML", "JavaScript", "CSS"],
+                "reponse": ["Python", "JavaScript"]
+            },
+            "Quels outils permettent de gérer des versions de code ?": {
+                "options": ["Git", "JIRA", "Subversion", "Trello"],
+                "reponse": ["Git", "Subversion"]
+            },
+            "Quels services permettent le stockage dans le cloud ?": {
+                "options": ["Google Drive", "Dropbox", "OneDrive", "Excel"],
+                "reponse": ["Google Drive", "Dropbox", "OneDrive"]
             }
         }
-        
     }
 }
